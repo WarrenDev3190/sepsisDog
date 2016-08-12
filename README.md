@@ -11,21 +11,44 @@ npm install sepsisDog --save
 ```
 
 
-## Tests
-
-```sh
-npm install
-npm test
-```
 
 ## Dependencies
 
-None
+- [axios](https://github.com/mzabriskie/axios): Promise based HTTP client for the browser and node.js
+- [body-parser](https://github.com/expressjs/body-parser): Node.js body parsing middleware
+- [cookie-parser](https://github.com/expressjs/cookie-parser): cookie parsing with signatures
+- [debug](https://github.com/visionmedia/debug): small debugging utility
+- [express](https://github.com/expressjs/express): Fast, unopinionated, minimalist web framework
+- [express-session](https://github.com/expressjs/session): Simple session middleware for Express
+- [knex](https://github.com/tgriesser/knex): A batteries-included SQL query &amp; schema builder for Postgres, MySQL and SQLite3 and the Browser
+- [moment](https://github.com/moment/moment): Parse, validate, manipulate, and display dates
+- [morgan](https://github.com/expressjs/morgan): HTTP request logger middleware for node.js
+- [node-yaml-config](https://github.com/leafty/node-yaml-config): Write your configuration files for node.js in yaml
+- [pg](https://github.com/brianc/node-postgres): PostgreSQL client - pure javascript &amp; libpq with the same API
+- [pug](https://github.com/pugjs/pug): A clean, whitespace-sensitive template language for writing HTML
+- [react](https://github.com/facebook/react): React is a JavaScript library for building user interfaces.
+- [react-dom](https://github.com/facebook/react): React package for working with the DOM.
+- [react-redux](https://github.com/reactjs/react-redux): Official React bindings for Redux
+- [react-router](https://github.com/reactjs/react-router): A complete routing library for React
+- [react-router-redux](https://github.com/reactjs/react-router-redux): Ruthlessly simple bindings to keep react-router and redux in sync
+- [redux](https://github.com/reactjs/redux): Predictable state container for JavaScript apps
+- [socket.io](https://github.com/Automattic/socket.io): node.js realtime framework server
 
 ## Dev Dependencies
 
+- [babel-core](https://github.com/babel/babel/tree/master/packages): Babel compiler core.
+- [babel-loader](https://github.com/babel/babel-loader): babel module loader for webpack
+- [babel-plugin-transform-runtime](https://github.com/babel/babel/tree/master/packages): Externalise references to helpers and builtins, automatically polyfilling your code without polluting globals
+- [babel-preset-es2015](https://github.com/babel/babel/tree/master/packages): Babel preset for all es2015 plugins.
+- [babel-preset-react](https://github.com/babel/babel/tree/master/packages): Babel preset for all React plugins.
+- [babel-preset-stage-0](https://github.com/babel/babel/tree/master/packages): Babel preset for stage 0 plugins
+- [babel-register](https://github.com/babel/babel/tree/master/packages): babel require hook
+- [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
+- [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
+- [supertest](https://github.com/visionmedia/supertest): SuperAgent driven library for testing HTTP servers
+- [webpack](https://github.com/webpack/webpack): Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jade, coffee, css, less, ... and your custom stuff.
+- [webpack-dev-server](https://github.com/webpack/webpack-dev-server): Serves a webpack app. Updates the browser on changes.
 
-None
 
 ## License
 
