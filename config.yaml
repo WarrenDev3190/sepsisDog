@@ -1,0 +1,14 @@
+default:
+  server:
+    port: 3000
+  database:
+    host: 'localhost'
+    port: 27017
+    db: 'sepsis_dog'
+    user: 'dev'
+    password: '' 
+development:
+test:
+production:
+  server:
+    port: 8000
