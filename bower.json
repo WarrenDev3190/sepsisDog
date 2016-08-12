@@ -1,0 +1,28 @@
+{
+  "name": "sepsisDog",
+  "description": "alerting system for com.hca.sepsisDetection",
+  "main": "index.js",
+  "authors": [
+    "WarrenDev3190 <warrendev3190@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "postgres",
+    "node",
+    "es6",
+    "socket.io",
+    "realtime",
+    "hca"
+  ],
+  "homepage": "esp.medcity.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/server/public/libs",
+    "test",
+    "tests"
+  ]
+}

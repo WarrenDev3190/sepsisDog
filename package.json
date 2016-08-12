@@ -1,0 +1,12 @@
+{
+  "name": "sepsisDog",
+  "version": "1.0.0",
+  "description": "alerting system for com.hca.sepsisDetection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Warrendev3190",
+  "license": "ISC"
+}
