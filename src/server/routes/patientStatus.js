@@ -5,7 +5,15 @@ import db from '../../constants/db'
 const router = Router()
 
 router.get('/', (req,res) => {
-	res.sendStatus(200)
+	db.select()
+	.from('patient_status')
+	.then(patients=>{
+		res.status(200).send(patients)
+		return next()
+	})
+	.catch(e=>{
+		res.status(404).end()
+	})
 })
 
 router.post('/state-change', (req, res, next) => {
