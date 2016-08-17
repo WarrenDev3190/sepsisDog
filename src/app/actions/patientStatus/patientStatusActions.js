@@ -2,30 +2,6 @@ import * as types from './patientStatusActionTypes'
 import axios from 'axios'
 import moment from 'moment'
 
-export const changeState = (uid, patient_state) => {
-	return {
-		type: types.CHANGE_STATE,
-		uid,
-		patient_state
-	}
-}
-
-export const acknowledge = (uid, ak_ts) => {
-	return {
-		type: types.ACKNOWLEDGE,
-		uid,
-		ak_ts
-	}
-}
-
-export const snooze = (uid, sn_ts) => {
-	return {
-		type: types.SNOOZE,
-		uid,
-		sn_ts
-	}
-}
-
 export const invalidatePatients = () => {
 	return {
 		type: types.INVALIDATE_PATIENTS,

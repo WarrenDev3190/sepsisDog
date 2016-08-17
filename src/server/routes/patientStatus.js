@@ -21,12 +21,14 @@ router.post('/state-change', (req, res, next) => {
 	if(!pid || !state){
 		res.status(422).send('[Missing Params]: You must specify both a pid and a state').end()
 	}else{
-		if(['active','on_list','snoozed','acknowledged'].indexOf(state) === -1){
+		if(['active','onlist','snoozed','acknowledged'].indexOf(state) === -1){
 			res.status(406).send('[Incorrect State Param]: Invalid patient_state').end()
 		}else{
 			db('patient_status')
 			.where({pid: pid})
-			.update({patient_state: state})
+			.update({patient_state: state,
+					 ak_ts: null,
+					 sn_ts: null})
 			.then(succ=>{
 				if(succ){
 					res.status(200).send('[Update Successful]')
@@ -50,7 +52,7 @@ router.post('/acknowledge', (req, res, next) => {
 		.where({pid:pid})
 		.update({
 			patient_state: 'acknowledged',
-			ak_ts: moment().format()
+			ak_ts: moment().add(1,"h").format()
 		})
 		.then(succ=>{
 			if(succ){
@@ -73,7 +75,7 @@ router.post('/snooze', (req, res, next) => {
 		.where({pid:pid})
 		.update({
 			patient_state: 'snoozed',
-			sn_ts: moment().format()
+			sn_ts: moment().add(12,"h").format()
 		})
 		.then(succ=>{
 			if(succ){

@@ -1,10 +1,10 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 import {expect} from 'chai'
-import App from '../../containers/App/App'
+import List from '../../components/List/List'
 
-describe('<App/>', ()=> {
+describe('<List/>',()=>{
 	it('should be a react component',()=>{
-		expect(App.prototype.componentDidMount).to.not.be.null
+		expect(List.prototype.componentDidMount).to.not.be.null
 	})
 })

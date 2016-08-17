@@ -3,18 +3,11 @@ import {expect} from 'chai'
 import {system} from '../../system'
 
 describe('PatientStatus', ()=> {
-	it('should return a 200 response', done => {
-		supertest(system)
-		.get('/patient-status')
-		.expect(200)
-		.end(done)
-	})
-
 	describe('stateChange', ()=> {
 		it('should return a 200 response when pid and status present', done => {
 			supertest(system)
 			.post('/patient-status/state-change')
-			.send({pid:6516, state:'on_list'})
+			.send({pid:6516, state:'onlist'})
 			.expect(200)
 			.end(done)
 		})
